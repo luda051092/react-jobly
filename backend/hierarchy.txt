@@ -1,0 +1,34 @@
+App                             // General page wrapper
+  - Navbar                       // Navigation bar
+    - NavLink                    // Links to different sections
+    - UserMenu                   // User menu (for logged-in users)
+
+  - Routes                       // Routes for different pages
+    - Home                       // Home page
+      - LoginForm                // Login form
+      - RegisterForm             // Registration form
+
+    - Companies                   // Companies page
+      - CompanyList              // List of companies
+        - CompanyCard            // Single company card
+          - CompanyDetail        // Detailed information about a company
+            - JobList            // List of jobs within a company
+              - JobCard          // Single job card
+                - ApplyButton    // Button to apply for a job
+
+    - Jobs                         // Jobs page
+      - JobList                  // List of jobs
+        - JobCard                // Single job card
+          - ApplyButton          // Button to apply for a job
+        - JobDetail              // Detailed information about a job
+          - ApplyButton          // Button to apply for a job
+
+    - Profile                      // User profile page
+      - UserProfile              // User profile information
+        - UpdateProfileForm      // Form to update user profile
+        - Applications           // List of job applications
+          - ApplicationCard      // Single job application card
+
+  - PrivateRoute                 // Protected route for authenticated users
+
+
